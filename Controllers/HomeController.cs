@@ -39,7 +39,6 @@ namespace Adresbook.Controllers
                 return View(users);
             }
         }
-        [Authorize(Roles = "admin")]
         public IActionResult Edit()
         {
             return View(db.Users.ToList());
