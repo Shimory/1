@@ -144,3 +144,4 @@ C:\Users\Xerxes\Source\Repos\1\obj\Debug\net5.0\Adresbook.dll
 C:\Users\Xerxes\Source\Repos\1\obj\Debug\net5.0\ref\Adresbook.dll
 C:\Users\Xerxes\Source\Repos\1\obj\Debug\net5.0\Adresbook.pdb
 C:\Users\Xerxes\Source\Repos\1\obj\Debug\net5.0\Adresbook.genruntimeconfig.cache
+C:\Users\Xerxes\Source\Repos\1\bin\Debug\net5.0\web.config

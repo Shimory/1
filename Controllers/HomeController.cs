@@ -1,5 +1,6 @@
 ﻿using Adresbook.Models;
 using Microsoft.AspNetCore.Mvc;
+using Microsoft.Azure.Batch;
 using Microsoft.AspNetCore.Authorization;
 using Microsoft.Extensions.Logging;
 using Microsoft.EntityFrameworkCore;
@@ -12,7 +13,6 @@ using System.Threading.Tasks;
 namespace Adresbook.Controllers
 
 {
- 
     public class HomeController : Controller
     {
         UserContext db;
@@ -20,7 +20,6 @@ namespace Adresbook.Controllers
         {
             db = context;
         }
-  
         public IActionResult Index()
         {
             return View();
@@ -44,6 +43,7 @@ namespace Adresbook.Controllers
             return View(db.Users.ToList());
         }
         [HttpPost]
+       
         public ActionResult AddUser()
         {
             string nameString = Request.Form.FirstOrDefault(p => p.Key == "name").Value;
